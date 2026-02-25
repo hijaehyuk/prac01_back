@@ -22,6 +22,12 @@ public class UserService implements UserDetailsService {
     private final EmailVerifyRepository emailVerifyRepository;
 
     public UserDto.SignupRes signup(UserDto.SignupReq dto) {
+
+        // 이메일 중복 확인
+        if(userRepository.findByEmail(dto.getEmail()).isPresent()){
+            throw new RuntimeException("중복 이메일");
+        }
+
         User user = dto.toEntity();
         user.setPassword(passwordEncoder.encode(dto.getPassword()));
         userRepository.save(user);
