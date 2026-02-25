@@ -14,6 +14,7 @@ public enum BaseResponseStatus {
     JWT_INVALID(false, 3002, "JWT 토큰 유효하지 않음"),
     SIGNUP_DUPLICATE_EMAIL(false, 3003, "중복된 이메일"),
     SIGNUP_INVALID_PASSWORD(false, 3004, "비밀번호는 대소문자, 숫자, 특수문자 포함"),
+    SIGNUP_INVALID_UUID(false, 3005, "유효하지 않은 인증값"),
 
     // 5000번대 실패
     FAIL(false, 5000, "요청 실패");

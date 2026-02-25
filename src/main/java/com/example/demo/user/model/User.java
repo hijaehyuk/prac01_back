@@ -12,7 +12,6 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idx;
-    @Column(nullable = false, unique = true)
     private String email;
     private String name;
     @Setter

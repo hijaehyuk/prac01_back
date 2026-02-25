@@ -40,7 +40,7 @@ public class BoardController {
         return ResponseEntity.ok(BaseResponse.success(returnDto));
     }
 
-    @DeleteMapping("/delete/{idx}")
+    @DeleteMapping("/remove/{idx}")
     public ResponseEntity update(@PathVariable Long idx) {
         boardService.delete(idx);
         return ResponseEntity.ok("성공");
