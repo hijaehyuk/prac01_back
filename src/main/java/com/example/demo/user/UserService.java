@@ -1,5 +1,6 @@
 package com.example.demo.user;
 
+import com.example.demo.common.exception.BaseException;
 import com.example.demo.user.model.AuthUserDetails;
 import com.example.demo.user.model.EmailVerify;
 import com.example.demo.user.model.User;
@@ -13,6 +14,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
+import static com.example.demo.common.model.BaseResponseStatus.SIGNUP_DUPLICATE_EMAIL;
+import static com.example.demo.common.model.BaseResponseStatus.SIGNUP_INVALID_UUID;
+
 @RequiredArgsConstructor
 @Service
 public class UserService implements UserDetailsService {
@@ -25,7 +29,7 @@ public class UserService implements UserDetailsService {
 
         // 이메일 중복 확인
         if(userRepository.findByEmail(dto.getEmail()).isPresent()){
-            throw new RuntimeException("중복 이메일");
+            throw BaseException.from(SIGNUP_DUPLICATE_EMAIL);
         }
 
         User user = dto.toEntity();
@@ -51,7 +55,9 @@ public class UserService implements UserDetailsService {
     }
 
     public void verify(String uuid) {
-        EmailVerify emailVerify = emailVerifyRepository.findByUuid(uuid).orElseThrow();
+        EmailVerify emailVerify = emailVerifyRepository.findByUuid(uuid).orElseThrow(
+                () -> BaseException.from(SIGNUP_INVALID_UUID)
+        );
         User user = userRepository.findByEmail(emailVerify.getEmail()).orElseThrow();
         user.setEnable(true);
         userRepository.save(user);
