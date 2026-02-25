@@ -15,7 +15,7 @@ import java.util.List;
 public class BoardController {
     private final BoardService boardService;
 
-    @PostMapping("/reg")
+    @PostMapping("/write")
     public ResponseEntity register(@RequestBody BoardDto.RegReq dto) {
         BoardDto.RegRes result = boardService.register(dto);
         return ResponseEntity.ok(result);
