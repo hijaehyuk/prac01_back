@@ -16,9 +16,9 @@ spring:
           timeout: 5000
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: "jdbc:mariadb://100.100.100.60:3306/test"
-    username: root
-    password: qwer1234
+    url: ${DB_URL}
+    username: ${DB_NAME}
+    password: ${DB_PWD}
 
   jpa:
     database-platform: org.hibernate.dialect.MariaDBDialect
