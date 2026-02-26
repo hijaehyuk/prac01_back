@@ -3,10 +3,8 @@ package com.example.demo.reply.model;
 import com.example.demo.board.model.Board;
 import com.example.demo.board.model.BoardDto;
 import com.example.demo.user.model.User;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.springframework.stereotype.Service;
 
 public class ReplyDto {
     @Builder
@@ -15,7 +13,9 @@ public class ReplyDto {
     @NoArgsConstructor
     public static class RegReq {
         private String contents;
+        @Setter
         private Long user_idx;
+        @Setter
         private Long board_idx;
 
         public Reply toEntity(User user, Board board) {
