@@ -14,6 +14,7 @@ public class BController {
     @PostMapping("/reg/{aIdx}")
     public ResponseEntity reg(@PathVariable Long aIdx, @RequestBody BDto.BReq dto){
         bService.write(aIdx, dto);
+        return ResponseEntity.ok("성공");
     }
 
     @GetMapping("/read/{idx}")
