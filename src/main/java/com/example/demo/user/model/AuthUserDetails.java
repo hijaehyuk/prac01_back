@@ -5,24 +5,40 @@ import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.oauth2.core.user.OAuth2User;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 
 
 @Getter
 @Builder
-public class AuthUserDetails implements UserDetails {
+public class AuthUserDetails implements UserDetails, OAuth2User {
     private Long idx;
     private String username;
+    private String name;
     private String password;
     private boolean enable;
     private String role;
+    private Map<String, Object> attributes;
+
+    @Override
+    public Map<String, Object> getAttributes() {
+        return attributes;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
 
     public static AuthUserDetails from(User entity) {
         return AuthUserDetails.builder()
                 .idx(entity.getIdx())
                 .username(entity.getEmail())
+                .name(entity.getName())
                 .password(entity.getPassword())
                 .enable(entity.isEnable())
                 .role(entity.getRole())
