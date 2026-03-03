@@ -16,6 +16,10 @@ public enum BaseResponseStatus {
     SIGNUP_INVALID_PASSWORD(false, 3004, "비밀번호는 대소문자, 숫자, 특수문자 포함"),
     SIGNUP_INVALID_UUID(false, 3005, "유효하지 않은 인증값"),
 
+
+    // 4000번대 실패
+    REQUEST_ERROR(false, 4001, "입력값이 잘못되었습니다."),
+
     // 5000번대 실패
     FAIL(false, 5000, "요청 실패");
 
