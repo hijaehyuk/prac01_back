@@ -1,5 +1,6 @@
 package com.example.demo.config.oauth2;
 
+import com.example.demo.utils.Aes256;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
