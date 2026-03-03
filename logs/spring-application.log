@@ -39,3 +39,555 @@
 2026-03-03 14:57:05 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-03-03 14:57:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-03-03 14:57:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-03 15:33:05 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2026-03-03 15:33:05 [main] INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 17.0.2 with PID 18684 (C:\Users\Playdata\IdeaProjects\prac01_back\build\classes\java\main started by Playdata in C:\Users\Playdata\IdeaProjects\prac01_back)
+2026-03-03 15:33:05 [main] DEBUG com.example.demo.DemoApplication - Running with Spring Boot v3.5.10, Spring v6.2.15
+2026-03-03 15:33:05 [main] INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-03 15:33:06 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-03 15:33:06 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 7 JPA repository interfaces.
+2026-03-03 15:33:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-03 15:33:07 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-03 15:33:07 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-03 15:33:07 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-03-03 15:33:07 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-03 15:33:07 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1519 ms
+2026-03-03 15:33:07 [main] DEBUG c.e.demo.config.filter.JwtFilter - Filter 'jwtFilter' configured for use
+2026-03-03 15:33:08 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-03 15:33:08 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.41.Final
+2026-03-03 15:33:08 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-03 15:33:08 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-03 15:33:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-03 15:33:08 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@47b494ce
+2026-03-03 15:33:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-03 15:33:08 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-03 15:33:08 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 10.6.22
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03 15:33:09 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03 15:33:09 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03 15:33:10 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-03-03 15:33:10 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-03 15:33:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-03 15:33:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-03 15:33:11 [main] INFO  com.example.demo.DemoApplication - Started DemoApplication in 6.917 seconds (process running for 7.534)
+2026-03-03 15:37:13 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-03 15:37:13 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-03 15:37:13 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-03-03 15:37:13 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        b1_0.idx,
+        b1_0.contents,
+        b1_0.create_date,
+        b1_0.title,
+        b1_0.update_date,
+        b1_0.user_idx 
+    from
+        board b1_0 
+    limit
+        ?, ?
+2026-03-03 15:37:13 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:INTEGER) <- [0]
+2026-03-03 15:37:13 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:INTEGER) <- [5]
+2026-03-03 15:37:13 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        user u1_0 
+    where
+        u1_0.idx=?
+2026-03-03 15:37:13 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [2]
+2026-03-03 15:37:13 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        count(b1_0.idx) 
+    from
+        board b1_0
+2026-03-03 15:37:13 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:13 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [1]
+2026-03-03 15:37:13 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:13 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [2]
+2026-03-03 15:37:13 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:13 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [3]
+2026-03-03 15:37:13 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:13 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [4]
+2026-03-03 15:37:13 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:13 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [5]
+2026-03-03 15:37:35 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        b1_0.idx,
+        b1_0.contents,
+        b1_0.create_date,
+        b1_0.title,
+        b1_0.update_date,
+        b1_0.user_idx 
+    from
+        board b1_0 
+    limit
+        ?, ?
+2026-03-03 15:37:35 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:INTEGER) <- [5]
+2026-03-03 15:37:35 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:INTEGER) <- [5]
+2026-03-03 15:37:35 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        user u1_0 
+    where
+        u1_0.idx=?
+2026-03-03 15:37:35 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [2]
+2026-03-03 15:37:35 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        count(b1_0.idx) 
+    from
+        board b1_0
+2026-03-03 15:37:35 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:35 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [6]
+2026-03-03 15:37:35 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:35 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [7]
+2026-03-03 15:37:35 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:35 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [8]
+2026-03-03 15:37:35 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:35 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [9]
+2026-03-03 15:37:35 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:35 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [10]
+2026-03-03 15:37:45 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        b1_0.idx,
+        b1_0.contents,
+        b1_0.create_date,
+        b1_0.title,
+        b1_0.update_date,
+        b1_0.user_idx 
+    from
+        board b1_0 
+    limit
+        ?, ?
+2026-03-03 15:37:45 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:INTEGER) <- [10]
+2026-03-03 15:37:45 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:INTEGER) <- [5]
+2026-03-03 15:37:45 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        user u1_0 
+    where
+        u1_0.idx=?
+2026-03-03 15:37:45 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [2]
+2026-03-03 15:37:45 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        count(b1_0.idx) 
+    from
+        board b1_0
+2026-03-03 15:37:45 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:45 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [11]
+2026-03-03 15:37:45 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:45 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [12]
+2026-03-03 15:37:45 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:45 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [13]
+2026-03-03 15:37:45 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:45 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [14]
+2026-03-03 15:37:45 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:45 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [15]
+2026-03-03 15:37:50 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        b1_0.idx,
+        b1_0.contents,
+        b1_0.create_date,
+        b1_0.title,
+        b1_0.update_date,
+        b1_0.user_idx 
+    from
+        board b1_0 
+    limit
+        ?, ?
+2026-03-03 15:37:50 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:INTEGER) <- [15]
+2026-03-03 15:37:50 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:INTEGER) <- [5]
+2026-03-03 15:37:50 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        user u1_0 
+    where
+        u1_0.idx=?
+2026-03-03 15:37:50 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [2]
+2026-03-03 15:37:50 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        count(b1_0.idx) 
+    from
+        board b1_0
+2026-03-03 15:37:50 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:50 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [16]
+2026-03-03 15:37:50 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:50 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [17]
+2026-03-03 15:37:50 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:50 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [18]
+2026-03-03 15:37:50 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:50 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [19]
+2026-03-03 15:37:50 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.board_idx,
+        r1_0.idx,
+        r1_0.contents,
+        u1_0.idx,
+        u1_0.email,
+        u1_0.enable,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        reply r1_0 
+    left join
+        user u1_0 
+            on u1_0.idx=r1_0.user_idx 
+    where
+        r1_0.board_idx=?
+2026-03-03 15:37:50 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [20]
+2026-03-03 15:37:58 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-03 15:37:58 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-03 15:37:58 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-03 15:37:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-03 15:37:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
